@@ -1,0 +1,28 @@
+@use "sass:color";
+
+// بررسی اینکه رنگ روشنه یا تاریک
+@function is-light($color) {
+    @return color.channel($color, "lightness", $space: hsl)>60%;
+}
+
+// رنگ hover با توجه به روشن یا تاریک بودن
+@function hover-color($color) {
+    @if is-light($color) {
+        @return color.adjust($color, $lightness: -8%);
+    }
+
+    @else {
+        @return color.adjust($color, $lightness: 8%);
+    }
+}
+
+// رنگ active با شدت بیشتر
+@function active-color($color) {
+    @if is-light($color) {
+        @return color.adjust($color, $lightness: -15%);
+    }
+
+    @else {
+        @return color.adjust($color, $lightness: 15%);
+    }
+}

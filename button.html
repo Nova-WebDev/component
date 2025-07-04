@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.7.2-web/css/all.css">
+</head>
+
+<body>
+    <header style="text-align: center; padding: 2rem;">
+        <a href="#" id="toggleMode" style="
+       display: inline-block;
+       padding: 0.75rem 1.5rem;
+       background-color: #007bff;
+       color: white;
+       border-radius: 6px;
+       font-weight: 600;
+       text-decoration: none;
+       transition: background-color 0.3s ease;
+     " onmouseover="this.style.backgroundColor='#005dc1'" onmouseout="this.style.backgroundColor='#007bff'">
+            dark / light
+        </a>
+    </header>
+
+    <main>
+        <div>
+            <a href="#" class="btn">
+                <span class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <span class="btn__text">text</span>
+
+                </span>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="btn">
+                <span class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <span class="btn__text">text</span>
+
+                </span>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="btn">
+                <span class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <span class="btn__text">text</span>
+
+                </span>
+            </a>
+        </div>
+        <div>
+
+            <a href="#" class="btn">
+                <span class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <span class="btn__text">text</span>
+
+                </span>
+
+                <div class="container-stars">
+                    <div class="stars"></div>
+                </div>
+
+                <div class="glow">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="#" class="btn">
+                <span class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <span class="btn__text">text</span>
+
+                </span>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="btn">
+                <span class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <span class="btn__text">text</span>
+
+                </span>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="btn">
+                <span class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <span class="btn__text">text</span>
+
+                </span>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="btn">
+                <span class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <span class="btn__text">text</span>
+
+                </span>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="btn">
+                <span class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <span class="btn__text">text</span>
+
+                </span>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="animated-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <div class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <strong class="btn__text">text</strong>
+
+                </div>
+
+            </a>
+        </div>
+        <div>
+            <a href="#" class="btn">
+                <span class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <span class="btn__text">text</span>
+
+                </span>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="btn">
+                <span class="btn__content">
+
+                    <i class="fas fa-star btn__icon" aria-hidden="true"></i>
+                    <span class="btn__text">text</span>
+
+                </span>
+            </a>
+        </div>
+    </main>
+</body>
+<script>
+    const toggleLink = document.getElementById('toggleMode');
+    let isDark = false;
+
+    toggleLink.addEventListener('click', (e) => {
+        e.preventDefault(); // چون <a> داریم
+        isDark = !isDark;
+        document.body.style.backgroundColor = isDark ? '#08142b' : '#f2f2f2';
+    });
+</script>
+
+</html>
